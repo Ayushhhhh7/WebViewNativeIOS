@@ -12,6 +12,8 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		247C94CA2DDB8B1100BB3A3E /* MyWebViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 247C94C92DDB8B1100BB3A3E /* MyWebViewManager.m */; };
+		247C94CC2DDB8B3200BB3A3E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247C94CB2DDB8B3200BB3A3E /* WebKit.framework */; };
 		7699B88040F8A987B510C191 /* libPods-EclatNative-EclatNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-EclatNative-EclatNativeTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -37,6 +39,9 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = EclatNative/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = EclatNative/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-EclatNative-EclatNativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EclatNative-EclatNativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		247C94C82DDB8B1100BB3A3E /* MyWebViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWebViewManager.h; sourceTree = "<group>"; };
+		247C94C92DDB8B1100BB3A3E /* MyWebViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWebViewManager.m; sourceTree = "<group>"; };
+		247C94CB2DDB8B3200BB3A3E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		3B4392A12AC88292D35C810B /* Pods-EclatNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EclatNative.debug.xcconfig"; path = "Target Support Files/Pods-EclatNative/Pods-EclatNative.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-EclatNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EclatNative.release.xcconfig"; path = "Target Support Files/Pods-EclatNative/Pods-EclatNative.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-EclatNative-EclatNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EclatNative-EclatNativeTests.debug.xcconfig"; path = "Target Support Files/Pods-EclatNative-EclatNativeTests/Pods-EclatNative-EclatNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -59,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				247C94CC2DDB8B3200BB3A3E /* WebKit.framework in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-EclatNative.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +92,8 @@
 		13B07FAE1A68108700A75B9A /* EclatNative */ = {
 			isa = PBXGroup;
 			children = (
+				247C94C82DDB8B1100BB3A3E /* MyWebViewManager.h */,
+				247C94C92DDB8B1100BB3A3E /* MyWebViewManager.m */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -99,6 +107,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				247C94CB2DDB8B3200BB3A3E /* WebKit.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-EclatNative.a */,
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-EclatNative-EclatNativeTests.a */,
@@ -393,6 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				247C94CA2DDB8B1100BB3A3E /* MyWebViewManager.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,10 +590,7 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -651,10 +658,7 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
